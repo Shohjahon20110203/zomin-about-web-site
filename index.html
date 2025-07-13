@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomin tumani uchun maxsus</title>
+    <meta name="description" content="Zomin - O'zbekistonning eng go'zal tabiat burchagi. Tog'lar, toza havo, milliy bog' va sanatoriyalar. Unutilmas sayohat uchun ideal joy.">
+    <meta name="keywords" content="Zomin, O'zbekiston, turizm, tabiat, tog'lar, milliy bog', sanatoriya, sayohat">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-particles"></div>
+        <div class="loading-content">
+            <div class="loading-icons">
+                <div class="loading-icon">🏔️</div>
+                <div class="loading-icon">🌿</div>
+                <div class="loading-icon">💨</div>
+            </div>
+            <h1 class="loading-title">Zomin</h1>
+            <p class="loading-subtitle">Tabiat Bag'rida</p>
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Yuklanmoqda...</p>
+            <div class="loading-progress">
+                <div class="loading-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="nav-logo"><a href="index.html"><img src="img/mountain-icon.png" alt="Icon" width="40px"></a></div>
+                <div class="nav-title"><a href="index.html">Zomin</a></div>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Bosh sahifa</a>
+                <a href="#about" class="nav-link">Haqida</a>
+                <a href="#attractions" class="nav-link">Joylar</a>
+                <a href="#testimonials" class="nav-link">Fikrlar</a>
+                <a href="#why-visit" class="nav-link">Nima uchun</a>
+                <a href="#gallery" class="nav-link">Galereya</a>
+                <a href="#contact" class="nav-link">Aloqa</a>
+            </div>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle"><img src="img/moon-icon.png" alt="" width="32px"></button>
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Zomin Shahri</h1>
+            <p class="hero-description">
+                O'zbekistonning eng go'zal burchaklaridan biri bo'lgan Zomin shahriga xush kelibsiz. 
+                Bu yerda tog'lar, toza havo va betakror tabiat sizni kutmoqda. Zomin - bu dam olish, 
+                sog'lomlashtirish va tabiat bilan birga bo'lish uchun ideal joy.
+            </p>
+            
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('attractions')" class="btn btn-primary">
+                    Diqqatga sazovor joylar
+                </button>
+                <button onclick="scrollToSection('about')" class="btn btn-secondary">
+                    Zomin haqida
+                </button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Zomin Haqida</h2>
+                <p class="section-description">
+                    Zomin - O'zbekistonning eng go'zal va ekologik toza hududlaridan biri. Bu yerda tog'lar, 
+                    o'rmonlar va toza havo sizni kutmoqda. Zomin Milliy bog'i va sanatoriyalar bilan mashhur 
+                    bo'lgan bu hudud har yili minglab sayyohlarni o'ziga jalb qiladi.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon blue"><img src="img/location-icon.png" alt="" width="45px"></div>
+                    <h3 class="feature-title">Joylashuv</h3>
+                    <p class="feature-description">Jizzax viloyati, Zomin tumani. Toshkentdan 180 km masofada joylashgan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">🏔️</div>
+                    <h3 class="feature-title">Balandlik</h3>
+                    <p class="feature-description">Dengiz sathidan 2000 metr balandlikda joylashgan tog'li hudud.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon purple">🌡️</div>
+                    <h3 class="feature-title">Iqlim</h3>
+                    <p class="feature-description">Mo'tadil kontinental iqlim. Yozda salqin, qishda qorli.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">📅</div>
+                    <h3 class="feature-title">Eng yaxshi vaqt</h3>
+                    <p class="feature-description">May-sentyabr oylari sayohat uchun eng qulay vaqt hisoblanadi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="attractions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Diqqatga Sazovor Joylar</h2>
+                <p class="section-description">
+                    Zominning eng go'zal va qiziqarli joylarini kashf eting. Har bir joy o'zining 
+                    noyob xususiyatlari va ajoyib manzaralari bilan sizni hayratda qoldiradi.
+                </p>
+            </div>
+
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/mountain-img.jpg" alt="Zomin Milliy Bog'i">
+                        <div class="attraction-icon green">🌲</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Zomin Milliy Bog'i</h3>
+                        <p class="attraction-description">O'zbekistonning eng katta milliy bog'laridan biri. Noyob o'simlik va hayvonot dunyosi.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/sanatoriya-img.jpg" alt="Zomin Sanatoriyalari">
+                        <div class="attraction-icon blue"><img src="img/sun-icon.png" alt="" width="30px"></div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Zomin Sanatoriyalari</h3>
+                        <p class="attraction-description">Sog'lomlashtirish va davolash uchun zamonaviy sanatoriyalar majmuasi.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/koprik-img.webp" alt="Piyoda sayohat yo'llari">
+                        <div class="attraction-icon purple"><img src="img/mountain-icon.png" alt=""></div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Piyoda sayohat yo'llari</h3>
+                        <p class="attraction-description">Turli qiyinlik darajasidagi piyoda sayohat marshrutlari va tog' yo'llari.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/kol.jpg" alt="Tog' ko'llari">
+                        <div class="attraction-icon teal">🌊</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Tog' ko'llari</h3>
+                        <p class="attraction-description">Kristal toza suvi bilan mashhur tog' ko'llari va soy-daryolar.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/water.jpg" alt="Kuzatuv nuqtalari">
+                        <div class="attraction-icon orange">📷</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Kuzatuv nuqtalari</h3>
+                        <p class="attraction-description">Tog'lardan ajoyib manzaralarni tomosha qilish uchun maxsus kuzatuv nuqtalari.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="img/tarixiy.jpg" alt="Tarixiy joylar">
+                        <div class="attraction-icon indigo"><img src="img/location-icon.png" alt=""></div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3 class="attraction-title">Tarixiy joylar</h3>
+                        <p class="attraction-description">Qadimiy madaniyat va tarix izlarini o'z ichiga olgan tarixiy yodgorliklar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sayyohlar Fikrlari</h2>
+                <p class="section-description">
+                    Zominda bo'lgan sayyohlarning tajribalari va fikrlari. Ularning hikoyalari sizni ham bu go'zal joyga tashrif buyurishga undaydi.
+                </p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-container" id="testimonials-container">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Aziza Karimova">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Zomin haqiqatan ham ajoyib joy! Toza havo, go'zal manzaralar va tinch muhit. Oilam bilan o'tkazgan eng yaxshi dam olish kunlari edi. Albatta qaytib kelamiz!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Aziza Karimova</h4>
+                                    <span>Toshkent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Bobur Rahimov">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Tog'larda piyoda yurish va tabiat bilan birga bo'lish - bu haqiqiy zavq! Zomin sanatoriyasida davolanish ham juda samarali bo'ldi. Hammaga tavsiya qilaman."</p>
+                                <div class="testimonial-author">
+                                    <h4>Bobur Rahimov</h4>
+                                    <span>Samarqand</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Malika Tosheva">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Milliy bog'dagi noyob o'simliklar va hayvonlar meni hayratda qoldirdi. Fotografiya uchun ajoyib joylar ko'p. Tabiat sevuvchilar uchun jannat!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Malika Tosheva</h4>
+                                    <span>Buxoro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Jasur Alimov">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Shahar shovqinidan charchagan har bir kishi Zominga kelishi kerak. Bu yerda haqiqiy tinchlik va osoyishtalik bor. Eng yaxshi tanlov!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Jasur Alimov</h4>
+                                    <span>Andijon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-navigation">
+                    <button class="testimonial-nav prev" onclick="changeTestimonial(-1)">‹</button>
+                    <div class="testimonial-dots" id="testimonial-dots"></div>
+                    <button class="testimonial-nav next" onclick="changeTestimonial(1)">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Visit Section -->
+    <section id="why-visit" class="why-visit">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nima uchun Zominni tanlash kerak?</h2>
+                <p class="section-description">
+                    Zomin sizga nafaqat dam olish, balki sog'ligingizni mustahkamlash va 
+                    tabiat bilan uyg'unlikda vaqt o'tkazish imkoniyatini beradi.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon blue">💨</div>
+                    <h3 class="benefit-title">Toza Havo</h3>
+                    <p class="benefit-description">Dengiz sathidan 2000 metr balandlikda joylashgan Zomin toza va salqin havo bilan mashhur.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon green">🌿</div>
+                    <h3 class="benefit-title">Eko-turizm</h3>
+                    <p class="benefit-description">Tabiatni muhofaza qilgan holda ekologik turizm va barqaror sayohat imkoniyatlari.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon purple">🏔️</div>
+                    <h3 class="benefit-title">Tog' Manzaralari</h3>
+                    <p class="benefit-description">Noyob tog' manzaralari va panoramik ko'rinishlar sizni hayratda qoldiradi.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon red">❤️</div>
+                    <h3 class="benefit-title">Sog'lomlashtirish</h3>
+                    <p class="benefit-description">Tabiiy davolash usullari va sanatoriyalar orqali sog'ligingizni mustahkamlang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="gallery-icon">📷</div>
+                <h2 class="section-title">Foto Galereya</h2>
+                <p class="section-description">
+                    Zominning eng go'zal manzaralarini ko'ring. Har bir rasm bu ajoyib joyning 
+                    noyob go'zalligini aks ettiradi.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Zomin tog'lari">
+                    <div class="gallery-overlay">
+                        <h3>Zomin tog'lari</h3>
+                        <p>Qorli tog' cho'qqilari va yashil vodiylar</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Milliy bog' manzarasi">
+                    <div class="gallery-overlay">
+                        <h3>Milliy bog' manzarasi</h3>
+                        <p>Zomin Milliy bog'ining noyob tabiat manzaralari</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Tog' ko'li">
+                    <div class="gallery-overlay">
+                        <h3>Tog' ko'li</h3>
+                        <p>Kristal toza suvi bilan mashhur tog' ko'li</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Piyoda yo'l">
+                    <div class="gallery-overlay">
+                        <h3>Piyoda yo'l</h3>
+                        <p>Tog'lardagi sayohat yo'llari</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Quyosh chiqishi">
+                    <div class="gallery-overlay">
+                        <h3>Quyosh chiqishi</h3>
+                        <p>Tog'lardan ajoyib quyosh chiqishi manzarasi</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Sanatoriya binosi">
+                    <div class="gallery-overlay">
+                        <h3>Sanatoriya binosi</h3>
+                        <p>Zamonaviy sanatoriya majmuasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bizga Tashrif Buyuring</h2>
+                <p class="section-description">
+                    Zomin haqida ko'proq ma'lumot olish yoki sayohat rejalashtirish uchun biz bilan bog'laning.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="contact-card-title">Aloqa Ma'lumotlari</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon green">📞</div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+998 88 523 83 93</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon purple">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>uzbuzb314@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon orange">📍</div>
+                            <div>
+                                <h4>Manzil</h4>
+                                <p>Zomin tumani, Jizzax viloyati</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <h3 class="social-card-title">Ijtimoiy Tarmoqlar</h3>
+                        <div class="social-links">
+                            <a href="https://instagram.com/shohjahon2011_blog" class="social-link instagram"><img src="img/instagram-logo.png" alt="" width="40px">Instagram</a>
+                            <a href="https://t.me/shohjahon2011_blog" class="social-link telegram"><img src="img/telegram-icon.png" alt="" width="40px"> Telegram</a>
+                            <a href="https://youtube.com/@shoh-coder" class="social-link youtube"><img src="img/youtube-icon.png" alt="" width="40px"> YouTube</a>
+                            <a href="https://github.com/shohjahon20110203" class="social-link github"><img src="img/github-icon.png" alt="" width="40px"> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <h3 class="form-title">Xabar Yuborish</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Ismingiz</label>
+                            <input type="text" id="name" name="name" required placeholder="Ismingizni kiriting">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Email manzilingizni kiriting">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Xabar</label>
+                            <textarea id="message" name="message" required placeholder="Xabaringizni yozing..." rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Yuborish 📤
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">🏔️</div>
+                        <h3>Zomin</h3>
+                    </div>
+                    <p class="footer-description">
+                        Tabiat bag'rida joylashgan Zomin - dam olish, sog'lomlashtirish va 
+                        unutilmas sayohatlar uchun ideal joy. Bizning maqsadimiz sizga 
+                        eng yaxshi xizmatni taqdim etish.
+                    </p>
+                    <div class="footer-love">
+                        <span>Sevgi bilan yaratilgan</span>
+                        <span class="heart">❤️</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="#hero">Bosh sahifa</a></li>
+                        <li><a href="#about">Zomin haqida</a></li>
+                        <li><a href="#attractions">Diqqatga sazovor joylar</a></li>
+                        <li><a href="#gallery">Foto galereya</a></li>
+                        <li><a href="#contact">Aloqa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Aloqa Ma'lumotlari</h4>
+                    <div class="footer-contact-item">
+                        <span class="dot green"></span>
+                        <span>+998 88 523 83 93</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="dot blue"></span>
+                        <span>uzbuzb314@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="dot purple"></span>
+                        <span>Zomin tumani, Jizzax viloyati</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Zomin Tourism. Barcha huquqlar himoyalangan.</p>
+                <button id="scroll-to-top" class="scroll-to-top" onclick="scrollToTop()">
+                    ↑
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <button class="lightbox-nav prev" onclick="prevImage()">‹</button>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-nav next" onclick="nextImage()">›</button>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
